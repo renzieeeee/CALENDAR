@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #333;
+    background: url('https://images.squarespace-cdn.com/content/v1/5fe4caeadae61a2f19719512/c25ae1ed-f0a3-45db-b396-9fd9d3a2dc95/Zoro') no-repeat center center/cover;
+}
+
+.calendar {
+    background-color: #111;
+    color: white;
+    width: 320px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 30px #222;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+.btn {
+    cursor: pointer;
+}
+
+.weekdays {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    font-weight: bold;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+}
+
+.days div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.days div:hover {
+    background-color: orangered;
+    color: white;
+}
+
+.today {
+    background-color: orangered;
+    color: white;
+}
+
+.prev-month, .next-month {
+    color: #777;
+    opacity: 0.5;
+}
